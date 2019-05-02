@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="3.7.8"></a>
+## [3.7.8](https://github.com/rentmanpublic/angular-ts-decorators/compare/v3.7.7...v3.7.8) (2019-05-02)
+
+
+### Bug Fixes
+
+* **utils:** fix prototype metadata pollution in util.getMetadata ([d58e488](https://github.com/rentmanpublic/angular-ts-decorators/commit/d58e488))
+
+
+
 <a name="3.7.7"></a>
 ## [3.7.7](https://github.com/vsternbach/angular-ts-decorators/compare/v3.7.6...v3.7.7) (2018-08-23)
 
