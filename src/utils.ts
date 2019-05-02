@@ -10,7 +10,7 @@ export const metadataKeys = {
   require: 'custom:require',
   options: 'custom:options',
   listeners: 'custom:listeners',
-  viewChildren: 'custom:viewChildren',
+  viewChildren: 'custom:viewChildren'
 };
 
 export function kebabToCamel(input: string) {
@@ -33,7 +33,12 @@ export function isAttributeSelector(selector: string) {
 
 /** @internal */
 export function getMetadata(metadataKey: any, target: any): any {
-  return Reflect.getMetadata(metadataKey, target);
+  let metadata = Reflect.getMetadata(metadataKey, target);
+
+  if (typeof metadata === 'object')
+    metadata = {...metadata};
+
+  return metadata;
 }
 
 /** @internal */
