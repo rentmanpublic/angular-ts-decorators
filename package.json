@@ -1,17 +1,16 @@
 {
-  "name": "angular-ts-decorators",
+  "name": "@rentman/angular-ts-decorators",
   "version": "3.7.7",
   "license": "MIT",
   "author": {
-    "name": "Vlad Sternbach",
-    "email": "vlad.sternbach@gmail.com",
-    "url": "https://github.com/vsternbach"
+    "name": "Martijn Welker",
+    "email": "martijn@rentman.nl"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vsternbach/angular-ts-decorators.git"
+    "url": "git+https://github.com/rentmanpublic/angular-ts-decorators.git"
   },
-  "homepage": "https://github.com/vsternbach/angular-ts-decorators",
+  "homepage": "https://github.com/rentmanpublic/angular-ts-decorators",
   "keywords": [
     "angular decorators",
     "angular-decorators",
