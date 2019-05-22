@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="3.7.10"></a>
+## [3.7.10](https://github.com/rentmanpublic/angular-ts-decorators/compare/v3.7.9...v3.7.10) (2019-05-22)
+
+
+### Bug Fixes
+
+* **ViewChild:** Call updateViewChildren before calling AfterViewInit ([2c6daa7](https://github.com/rentmanpublic/angular-ts-decorators/commit/2c6daa7))
+
+
+
 <a name="3.7.9"></a>
 ## [3.7.9](https://github.com/rentmanpublic/angular-ts-decorators/compare/v3.7.8...v3.7.9) (2019-05-02)
 
