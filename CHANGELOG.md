@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="3.7.11"></a>
+## [3.7.11](https://github.com/rentmanpublic/angular-ts-decorators/compare/v3.7.10...v3.7.11) (2021-01-12)
+
+
+### Bug Fixes
+
+* **viewChild:** Never return an ElementRef when a ViewChild component selector is passed ([8122863](https://github.com/rentmanpublic/angular-ts-decorators/commit/8122863))
+
+
+
 <a name="3.7.10"></a>
 ## [3.7.10](https://github.com/rentmanpublic/angular-ts-decorators/compare/v3.7.9...v3.7.10) (2019-05-22)
 
