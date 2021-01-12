@@ -78,7 +78,10 @@ export function extendWithHostListenersAndChildren(ctrl: {new(...args: any[])},
       properties.forEach(property => {
         const child = viewChildren[property];
         let selector: string;
-        if (typeof child.selector !== 'string') {
+
+        const isComponentSelector = typeof child.selector !== 'string';
+
+        if (isComponentSelector) {
           const type = getTypeDeclaration(child.selector);
           if (type !== Declaration.Component && type !== Declaration.Directive) {
             console.error(`No valid selector was provided for ViewChild${child.first ? '' :
@@ -92,10 +95,10 @@ export function extendWithHostListenersAndChildren(ctrl: {new(...args: any[])},
           .map((viewChild: Element) => {
             // if ViewChild selector is type use selector derived from type
             // otherwise (i.e. id of the element), get it's element name (localName)
-            const componentName = typeof child.selector === 'string' ? viewChild.localName : selector;
+            const componentName = !isComponentSelector ? viewChild.localName : selector;
             const el = angular.element(viewChild);
             const $ctrl = el && el.controller(kebabToCamel(componentName));
-            return child.read ? new ElementRef(el) : ($ctrl || new ElementRef(el));
+            return !isComponentSelector ? new ElementRef(el) : $ctrl;
           })
           .filter(el => !!el);
 

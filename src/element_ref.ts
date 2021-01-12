@@ -10,16 +10,16 @@
  * A wrapper around a native element inside of a View.
  * @stable
  */
-export class ElementRef {
+export class ElementRef<T extends HTMLElement = HTMLElement> {
 
-  public nativeElement: HTMLElement;
+  public nativeElement: T;
 
   constructor($element: JQuery) {
     $element['nativeElement'] = $element[0];
-    return $element as ElementRef;
+    return $element as ElementRef<T>;
   }
 }
 
-export interface ElementRef extends JQuery {
-  nativeElement: HTMLElement;
+export interface ElementRef<T extends HTMLElement = HTMLElement> extends JQuery {
+  nativeElement: T;
 }
