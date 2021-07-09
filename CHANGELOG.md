@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="3.7.15"></a>
+## [3.7.15](https://github.com/rentmanpublic/angular-ts-decorators/compare/v3.7.14...v3.7.15) (2021-07-09)
+
+
+
 <a name="3.7.14"></a>
 ## [3.7.14](https://github.com/rentmanpublic/angular-ts-decorators/compare/v3.7.13...v3.7.14) (2021-07-09)
 
